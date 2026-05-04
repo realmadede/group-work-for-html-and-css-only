@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #081b29;
+    background: #674846;
     color: #ededed;
     min-height: 100vh;             
     line-height: 1.5;
@@ -20,7 +20,7 @@ body {
     left: 0;
     width: 100%;
     padding: 15px 5%;
-    background: yellowgreen;
+    background: #C21E56;
     display: flex;
     flex-wrap: wrap;              
     justify-content: space-between;

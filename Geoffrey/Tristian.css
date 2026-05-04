@@ -7,8 +7,8 @@
 }
 
 body {
-    background: #022945;
-    color: #ededed;
+    background: url(https://coolors.co/c76f68-0e0b1a-140e1b-141633-3f1d22);
+    color: black;
     min-height: 100vh;             
     line-height: 1.5;
     padding-top: 90px; 
@@ -20,7 +20,7 @@ body {
     left: 0;
     width: 100%;
     padding: 15px 5%;
-    background: rgb(58, 87, 1);
+    background: linear-gradient(to right, rgb(118, 193, 127), rgb(60, 89, 183));
     display: flex;
     flex-wrap: wrap;              
     justify-content: space-between;

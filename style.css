@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #081b29;
+    color: #b8c6d1;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding-top: 120px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 6%;
+    background: yellowgreen;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px 24px;
+    z-index: 100;
+}
+
+.top-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.top-left h2 {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+}
+
+.top-left h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ededed;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    font-size: 15px;
+}
+
+.top-right a {
+    position: relative;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 6px 2px;
+    transition: 0.3s;
+}
+
+.top-right a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #00abf0;
+    transition: width 0.3s;
+}
+
+.top-right a:hover,
+.top-right a.active {
+    color: #ffffff;
+}
+
+.top-right a:hover::after,
+.top-right a.active::after {
+    width: 100%;
+}
+
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 20px 0 60px;
+}
+
+.card h3 {
+    color: #00abf0;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 0.3px;
+}
+
+.card p {
+    color: #b8c6d1;
+    font-size: 17px;
+}
+
+.top {
+    text-align: center;
+    padding: 40px 32px;
+}
+
+.top h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+
+.bot a {
+    color: #00abf0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.members-grid {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 14px;
+}
+
+.bottom a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    background: #102e44;
+    color: #b8c6d1;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.bottom a:hover {
+    color: #00abf0;
+    background: #0a2032;
+    transform: translateY(-2px);
+}

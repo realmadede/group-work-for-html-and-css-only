@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #524c2f;
+    color: #ededed;
+    min-height: 100vh;             
+    line-height: 1.5;
+    padding-top: 90px; 
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 5%;
+    background: #a28b71;
+    display: flex;
+    flex-wrap: wrap;              
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    gap: 10px;
+}
+
+.name {
+    color: #ededed;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 25px;
+}
+
+.navbar a {
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #00abf0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contents {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start; 
+}
+
+.image {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+}
+
+.image img {
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    border-radius: 50%;
+    display: block;
+}
+
+
+.scrollable {
+    flex: 1 1 300px;               
+    min-width: 0;
+}
+
+.scrollable .active {
+    max-width: 100%;
+}
+
+.scrollable .active h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 0;             
+    line-height: 1.2;
+}
+
+.scrollable .active h3 {
+    font-size: 18;
+    font-weight: 700;
+    color: #00abf0;
+    margin: 8px 0 12px;
+}
+
+.scrollable .active p {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.scrollable ul {
+    padding-left: 22px;
+    margin: 16px 0;
+}
+
+.scrollable h4 {
+    font-size: 22px;
+    margin: 24px 0 12px;
+    color: #00abf0;
+}
+
+.scrollable table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    display: block; 
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.scrollable table th,
+.scrollable table td {
+    padding: 10px;
+    border: 1px solid #ededed;
+    text-align: left;
+}
+
+.contents + h3,
+body > h3 {
+    text-align: center;
+    margin: 30px 5% 16px;
+    font-size: 24px;
+    color: #00abf0;
+}
+
+body > img {
+    max-width: 100%;
+    height: auto;
+    margin: 8px;
+    border-radius: 6px;
+    vertical-align: middle;
+}
+
+.gallery {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body {
+    text-align: left;
+}
+
+footer {
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 5%;
+    gap: 20px;
+}
+
+.icons img {
+    padding-bottom: 5px;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+.icons a:hover img {
+    transform: scale(1.5);
+}

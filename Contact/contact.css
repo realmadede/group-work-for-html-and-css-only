@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #081b29;
+    width: 80%;
+    margin: 50px auto;
+    color: #ededed;
+    height: 100vh;             
+    line-height: 1.5;
+    padding-top: 90px; 
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 5%;
+    background: yellowgreen;
+    display: flex;
+    flex-wrap: wrap;              
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    gap: 10px;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 25px;
+}
+
+.navbar a {
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #00abf0;
+}
+
+.but{
+    border-radius: 8px;
+    background-color: yellowgreen;
+    color: #ededed;
+    font-size: 16px;
+    font-weight: 200;
+    border: none;
+    cursor: pointer;
+    transition: o.3s;
+}
+
+.but:hover{
+    color: #00abf0;
+}
+
+.main-container h3{
+    font-size: 18px;
+    font-weight: 700;
+    color: #00abf0;
+    margin: 8px 0 12px;
+}
+
+.main-container a{
+    color: #ededed;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.main-container a:hover {
+    color: #00abf0;
+}
+
+.content{
+    padding-top: 20px;
+}
+
+.in{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 345px;
+    height: 50px;
+}
+
+.inq{
+    margin: 20px 0 40px;
+}
+
+.cent{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.mes{
+    display: flex;
+    flex-direction:column;
+}
+
+.mes label{
+    font-weight: 500;
+    font-size: 20px;
+    color: #00abf0;
+    margin-bottom: 0.75rem;
+}
+
+.mes textarea {
+  font-family: inherit;
+  font-size: 16px;
+  color: #333333;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #a7cfdf;
+  min-height: 250px;
+  width: 100%;
+  resize: vertical;
+  line-height: 1.6;
+  transition: 0.2s;
+}
+
+.mes textarea:focus {
+  outline: none;
+  background-color: #ffffff;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.in button{
+    position: relative;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.in button:hover{
+    color: #00abf0;
+}
+
+.in button:nth-child(2){
+    color: #081b29;
+}
+
+.in button:nth-child(2):hover{
+    color: #00abf0;
+}
+
+.in button:nth-child(2)::before{
+    color: #00abf0;
+}
+
+.in button::before{
+    position: absolute;
+    top: 0;
+    content: '';
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #081b29;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.in button:hover::before{
+    width: 100%;
+}
+
+.inquiry-section {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.inquiry-title {
+  font-weight: 500;
+  font-size: 20px;
+  color: #1a1a1a;
+  margin: 0 0 1rem 0;
+}
+ 
+.inquiry-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+ 
+.inquiry-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+ 
+.inquiry-label:hover {
+  color: #4a90e2;
+}
+ 
+.inquiry-radio {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #4a90e2;
+}
+ 
+.interests-section {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.interests-title {
+  font-weight: 500;
+  font-size: 16px;
+  color: #ededed;
+  margin: 0 0 1rem 0;
+}
+ 
+.interests-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+ 
+.interests-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+ 
+.interests-label:hover {
+  color: #4a90e2;
+}
+ 
+.interests-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #4a90e2;
+}
+
+.middle{
+    margin-bottom: 15px; 
+}
+
+.middle label{
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"]{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+input[type="radio"]{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #4a90e2;
+}

@@ -1,134 +1,229 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dorcus</title>
-        <link rel="stylesheet" href="dorcus.css">
-    </head>
-    <body>
-        <div class="container">
-        <header class="header">
-        <h2 class="name">Dorcus' Portfolio</h2>
-                   <nav class="navbar">
-                 <a href="../index.html">Home</a>
-                <a href="../Contact/contact.html">Contact Us</a> 
-            </nav>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dorcus</title>
+    <link rel="stylesheet" href="dorcus.css" />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/128/6889/6889369.png"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-left">
+          <h2 class="name">Dorcus' Portfolio</h2>
+          <p class="tagline">Student, creative and ambitious.</p>
         </div>
-        <div class="contents">
-            <div class="image">      
-                <img src="dorcus.jpeg" alt="Profile photo" width="150px">
-            </div>
+        <div class="header-right">
+          <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../Contact/contact.html">Contact</a>
+          </nav>
+          <button id="themeBtn" class="theme-toggle" type="button">
+            Dark Mode
+          </button>
+        </div>
+      </header>
 
-            <div class="scrollable">
-                <div class="active">
-                     <h2> Dorcus' Biography</h2>
-                     <h3>Computer Science Student</h3>
-                    <p>Dorcus Elisha Mwasakifwa is a computer science student of
-                        the University of Dar es Salaam who is passionate about
-                        learning
-                        on how technology works and how it can solve everyday
-                        problems.She enjoys studying programming building simple
-                        projects and
-                        improving her skills step by step.
-                    </p>
-                    </div>
-        <h3>My Skills</h3>
-        <ul>
-            <li>Cooking</li>
-            <ul>
-                <li> Baking</li>
-                <li> Grilling</li>
-                <li> Roasting</li>
-            </ul>
-            <li>Programming</li>
-            <li>Singing</li>
-        </ul>
-        <h4>Education</h4>
-        <table>
-            <tr>
-                <th>level</th>
-                <th> School</th>
-                <th> Year</th>
-            </tr>
+      <main class="contents">
+        <div class="main-container">
+        <section class="profile-card">
+          <div class="photo-frame">
+            <img
+              src="dorcus.jpeg"
+              alt="Dorcus profile photo"
+              class="lightbox-img"
+            />
+          </div>
+          <div class="bio-box">
+            <h4>Dorcus Elisha</h4>
+            <p>
+              A curious computer science student on a journey to master programming and web design.
+            </p>
+            <p>
+              I believe technology is a powerful tool for change,
+            </p>
+            <p>
+              and I'm committed to develop skills to use it well.
+            </p>
+          </div>
+        </section>
 
-            <tr>
+        <section class="panel">
+          <div class="panel-header">
+            <h3>My Skills</h3>
+          </div>
+          <ul class="skills-list">
+            <li class="skill-item" tabindex="0">
+              Cooking
+              <p class="skill-detail">
+                I am well skiled in cooking varieties of foods, by using different styles to ensure
+                my cooking is the best such as<br>
+                    -Baking<br>
+                    -Roasting<br>
+                   - Grilling<br>
+                
+              </p>
+            </li>
+            <li class="skill-item" tabindex="0">
+              Programming
+              <p class="skill-detail">
+                I'm in my learning journey of Computer Science, taking codes conceptsand turn them into 
+                practice daily.
+              </p>
+            </li>
+            <li class="skill-item" tabindex="0">
+               Listening
+              <p class="skill-detail">
+                I give full attention when someone is speaking. Listen to understand not just reply.
+              </p>
+            </li>
+            <li class="skill-item" tabindex="0">
+              Decorating
+              <p class="skill-detail">
+                I love making spaces look beautiful and welcoming. I enjoy choosing colors and arranging things.
+              </p>
+            </li>
+          </ul>
+        </section>
+        </div>
+        <div class="main-box">
+        <section class="panel">
+          <div class="panel-header education-header">
+            <h3>Education</h3>
+            <button id="sortBtn" class="sort-btn" type="button">
+              Sort Year ↓
+            </button>
+          </div>
+          <div class="table-wrap">
+            <table id="eduTable">
+              <tr>
+                <th>Level</th>
+                <th>School</th>
+                <th>Year</th>
+              </tr>
+              <tr>
                 <td>University</td>
-                <td> University of Dar es Salaam</td>
-                <td> 2025-to date </td>
-            </tr>
-            <tr>
-                <td>A-level</td>
-                <td> St Mary's Mazinde Juu Secondary School</td>
-                <td> 2023-2025</td>
-            </tr>
-            <tr>
-                <td> O-level</td>
-                <td> Harrison Uwata Girls' Secondary School</td>
-                <td> 2019-2022</td>
-            </tr>
-            <tr>
-                <td> Primary</td>
-                <td> Umoja Primary School</td>
-                <td> 2012-2018</td>
-            </tr>
-        </table>
+                <td>University of Dar es Salaam</td>
+                <td>2025-date</td>
+              </tr>
+              <tr>
+                <td>A-Level</td>
+                <td>St Marys Mazinde Juu Secondary School</td>
+                <td>2023-2025</td>
+              </tr>
+              <tr>
+                <td>O-Level</td>
+                <td>Harrison Uwata Girls' Secondary School</td>
+                <td>2019-2022</td>
+              </tr>
+              <tr>
+                <td>Primary</td>
+                <td>Umoja Primary SChool</td>
+                <td>2012-2018</td>
+              </tr>
+            </table>
+          </div>
+        </section>
 
-        <h4>Hobbies/Interest</h4>
-
-        <ul>
-            <li><b>Cooking</b><br>
-                I love cooking because I am well talented in making
-                delicious foods and I feel very excited when people enjoy my
-                coking.
+        <section class="panel hobby-panel">
+          <h3>Hobbies & Interest</h3>
+          <ul class="hobby-list">
+            <li class="hobby-item">
+              <strong>Singing</strong>
+              <p class="hobby-text collapsed">
+                Singigng is one of my favourate thing to do in my free time.There is somethingabout music that speaks directly to the soul and for me singing is the most personal way to connect with it.
+                Whether I'm humming along to a song I love or singing out loud when I'm alone. It always lift my spirit and helps me express feelings that I sometimes struggle to put into words.
+                Music has a way of capturing how you feel,and singing makes me feel free, confident and deeply alive.
+                </p>
+        <button class="read-more-btn">Read more</button>
             </li>
-
-            <br>
-
-            <li><b>Programming</b><br>
-                I like programming. I enjoy using my computer to create things
-                and solve problems.Also makes me enjoy by learning new coding
-                skills.
+            <li class="hobby-item">
+              <strong>Watching movies</strong>
+              <p class="hobby-text collapsed">
+                I genuinely enjoy sitting down and losing myself in a good movie.Films have a unique power to take you somewhere completely different a different world, a different time, a different lifeand I find that incredibly exciting.
+                I love how agret story can make me laugh,cry, think deeply, or see the world from a perspective you never considered before. Watching movies is not just entertainment for me, is a way of learning about life,people, and emotions in a way that feels natural and enjoyable.
+                </p>
+              <button class="read-more-btn">Read more</button></li>
+              <li class="hobby-item">
+              <strong>Drawing</strong>
+              <p class="hobby-text collapsed">
+               Drawing is my personal creative escape. Whenever I pick up a pencil and start putting lines on pape, everything else fades away and it is justme and my imagination. I love how drawing allows me to express that are hard to say out loud, feelings, ideas and visionsthat live inside my head. It does not have to be perfect, it just has to be mine. Every sketch I make feels like a smallpiece of who I am, and that 
+               is what makes it so meangful of me.
+              </p>
+              <button class="read-more-btn">Read more</button>
             </li>
+          </ul>
+        </section>
+      </div>
+      </main>
 
-            <br>
-
-            <li><b>Drawing</b><br>
-                I like drawing. I helps me to express my ideas and relax.
-                Usually draws whatever comes to my mind or things I find
-                interesting.
-            </li>
-
-            <br>
-
-            <li><b>Watching Movies</b><br>
-                I enjoy warching movies. It's fun and helps me relax. Sometimes
-                I
-                learn different perspective from them.
-            </li>
-        </ul>
-</div>
-</div>
+      <section class="gallery-section">
         <h3>Gallery</h3>
-         <div class="gallery">
-        <img src="pic6.JPEG" width="200" height="150">
-        <img src="pic7.JPEG" width="200" height="150">
-        <img src="pic8.JPEG" width="200" height="150">
-</div>
+        <div class="gallery">
+          <img
+            src="pic5.JPEG"
+            alt="Gallery photo 1"
+            class="gallery-img lightbox-img"
+          />
+          <img
+            src="pic6.JPEG"
+            alt="Gallery photo 2"
+            class="gallery-img lightbox-img"
+          />
+          <img
+            src="pic7.JPEG"
+            alt="Gallery photo 2"
+            class="gallery-img lightbox-img"
+          />
+        </div>
+      </section>
 
-        <footer class="icons">
+      <footer class="footer">
+        <div class="social-icons">
+          <a
+            href="https://www.youtube.com/watch?v=ouvOYElia1A&list=PLBlnK6fEyqRiueC_HzwFallNO76hfXBB7&index=7"
+            target="_blank"
+          >
+           
+           <img
+              src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+              alt="YouTube"
+              width="30"
+              height="30"
+            />
+             
+          </a>
+          <a href="https://github.com/dorcusmwasakifwa" target="_blank">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+              alt="GitHub"
+              width="30"
+              height="30"
+            />
+          </a>
+        </div>
+      </footer>
 
-        <a href="https://github.com/Dorry06-Elisha"><img
-                        src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
-                        width="30" height="30"></a>
+      <button
+        id="topBtn"
+        class="top-btn"
+        type="button"
+        aria-label="Scroll to top"
+      >
+        ↑
+      </button>
 
-            <a href="https://www.youtube.com/watch?v=q0RFGwMkpMI&list=PL495mke12zYANEM9p7JT5-99Yx8Z7z_ib"><img
-                        src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="30" height="30"></a>
-        </footer>
-       
+      <div id="lightbox" class="lightbox">
+        <span id="closeBtn" class="close-btn">&times;</span>
+        <img id="lightboxImg" alt="Preview image" />
+      </div>
 
-    
-
-    </body>
+      <script src="dorcus.js" defer></script>
+    </div>
+  </body>
 </html>

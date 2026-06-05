@@ -1,158 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Character encoding for proper text display -->
-        <meta charset="UTF-8">
 
-        <!-- Makes the page responsive on all devices -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madede's Profile</title>
+    <link rel="stylesheet" href="madede.css">
+</head>
 
-        <!-- Title shown on browser tab -->
-        <title>Madede's Profile</title>
-        <link rel="stylesheet" href="madede.css">
-    </head>
+<body>
 
-    <body>
-        <div class="container">
+    <div class="container">
         <header class="header">
+
             <h2 class="name">Who is MADEDE?</h2>
-            
-            <nav class="navbar">
-                 <a href="../index.html">Home</a>
-                <a href="../Contact/contact.html">Contact Us</a> 
-            </nav>
+
+            <div class="header-controls">
+                <button id="themeBtn">Dark Mode</button>
+
+                <nav class="navbar">
+                    <a href="../index.html">Home</a>
+                    <a href="../Contact/contact.html">Contact Us</a>
+                </nav>
+            </div>
+
         </header>
-        </div>
-        
-        <div class="contents">
-            <div class="image">      
-                <img src="IMAGE.jpeg" alt="Profile photo" width="150px">
-            </div>
-
-            <div class="scrollable">
-                <div class="active">
-                    <h2>Hi I'm Bagomwa Raphael</h2>
-                    <h3>UDSM Student</h3>
-                    <p>I like to be called Madede cause the name remind me where I came from and so keeping Motivated.I am a Tanzanian First Year Student at the University of Dar es Salaam pursuing BSc In Computer Science.
-                       I am interested in Cybersecurity and Blockchain Technology. Sometimes I wonder how the Bitcoin transaction is done with no bank involvment? and how the transaction become legit? And this pushed me up to the new tech called Blockchain </p>
-                       <p> I got interested in cybersecurity started from wanting to understand how someone, unathorized access to system actually happen </p>
-
-                </div>
-
-                <h4>Skills</h4>
-
-                <ul>
-                    <li>Cyber Hygiene</li>
-                    <li>Teamwork</li>
-                    <li>Blockchain Concepts</li>
-
-            <!-- Nested list for programming skills -->
-                    <li>Programming
-                        <ul>
-                            <li>C Programming</li>
-                            <li>Java</li>
-                            <li>HTML</li>
-                            <li>A little Python</li>
-                        </ul>
-                    </li>
-                </ul>
-
-        <!-- Education Section -->
-        <h4>Education</h4>  
-
-        <!-- Table for education details -->
-        <table>
-            <tr>
-                <th>Level</th>
-                <th>School</th>
-                <th>Year</th>
-            </tr>
-
-            <!-- University -->
-            <tr>
-                <td>University</td>
-                <td>University of Dar Es Salaam</td>
-                <td>2025 - To date</td>
-            </tr>
-
-            <!-- A-Level -->
-            <tr>
-                <td>A-level</td>
-                <td>Fountain Gate Dodoma High School</td>
-                <td>2023 - 2025</td>
-            </tr>
-
-            <!-- O-Level -->
-            <tr>
-                <td>O-Level</td>
-                <td>Mwananchi Secondary School</td>
-                <td>2019 - 2022</td>
-            </tr>
-
-            <!-- Primary -->
-            <tr>
-                <td>Primary</td>
-                <td>Kilimahewa Primary School</td>
-                <td>2012 - 2018</td>
-            </tr>
-        </table>
-
-
-        <h4>Hobbies / Interests</h4>
-
-        <ul>
-            <li>
-                <b>Scrolling</b><br>
-                <!-- Description of hobby -->
-                <p>It gives me brain quick and easy rewards and takes my mind off stress and overthinking.</p>
-            </li>
-
-            <li>
-                <b>Seeing things neat</b>
-                <!-- Description of hobby -->
-                <p>I feel like I'm allergic to dust and bad arrangement. To overcome this I make sure the area around me is always clean.</p>
-            </li>
-
-            <li>
-                <b>Watching Movie</b><br>
-                <!-- Description of hobby -->
-                <p>Though I am not among 80% movie lovers in any place but watching hollywood makes me feel like everything is possible even fiction ones</p>
-            </li>
-        </ul>
-
-            </div>
-    </div>      
-        
-        <h3>Gallery</h3>
-    <div class="gallery">
-        <!-- Sample images -->
-        <img src="Blockchain.png" height="150" width="200">
-        <img src="Hollywood.png" height="150" width="200">
-        <img src="Kali.png" height="150" width="200">
     </div>
-        
 
 
-        <footer class="icons">
-                <a href="https://www.linkedin.com/in/bagomwa-raphael-2a922439a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
-                    <img
-                        src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-                        height="30" width="30">
-                </a>
+    <div class="contents">
 
-                <a href="https://www.instagram.com/m.a.d.e.d.e?igsh=MWJqMG15M3A1b25ocQ==" target="_blank">
-                    <img
-                        src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-                        height="30" width="30">
-                </a>
-              
-                <a href="https://github.com/realmadede" target="_blank">
-                    <img
-                        src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
-                        height="30" width="30">
-                </a>
-        
-        </footer>
-    
-    </body>
+        <div class="image">
+            <img src="IMAGE.jpeg"
+                 alt="Profile photo"
+                 width="150"
+                 class="gallery-img">
+        </div>
+
+        <div class="scrollable">
+
+            <div class="active">
+
+                <h2>Hi I'm Bagomwa Raphael</h2>
+
+                <h3>UDSM Student</h3>
+
+                <p>
+                    I like to be called Madede because the name reminds me where I came from and keeps me motivated.
+                    I am a Tanzanian First Year Student at the University of Dar es Salaam pursuing a BSc in Computer Science.
+                    I am interested in Cybersecurity and Blockchain Technology.
+                    Sometimes I wonder how Bitcoin transactions happen without bank involvement and how transactions become legitimate.
+                    This curiosity pushed me toward Blockchain technology.
+                </p>
+
+                <p>
+                    My interest in cybersecurity started from wanting to understand how unauthorized access to systems actually happens.
+                </p>
+
+            </div>
+
+
+            <h4>Skills</h4>
+
+            <ul class="skills-list">
+
+                <li>
+                    <span class="skill">Cyber Hygiene</span>
+
+                    <p class="skill-details">
+                        Understanding safe online behavior, password management, phishing awareness,
+                        and protecting personal information.
+                    </p>
+                </li>
+
+                <li>
+                    <span class="skill">Teamwork</span>
+
+                    <p class="skill-details">
+                        Ability to collaborate effectively with team members and contribute toward
+                        common goals.
+                    </p>
+                </li>
+
+                <li>
+                    <span class="skill">Blockchain Concepts</span>
+
+                    <p class="skill-details">
+                        Basic understanding of decentralization, consensus mechanisms,
+                        cryptocurrencies, and smart contracts.
+                    </p>
+                </li>
+
+                <li>
+                    <span class="skill">Programming</span>
+
+                    <p class="skill-details">
+                        Experience with C Programming, Java, HTML, and basic Python development.
+                    </p>
+                </li>
+
+            </ul>
+
+
+            <h4>Education</h4>
+
+            <button id="sortBtn">Sort by Year</button>
+
+            <table id="educationTable">
+
+                <tr>
+                    <th>Level</th>
+                    <th>School</th>
+                    <th>Year</th>
+                </tr>
+
+                <tr>
+                    <td>University</td>
+                    <td>University of Dar Es Salaam</td>
+                    <td>2025 - To date</td>
+                </tr>
+
+                <tr>
+                    <td>A-Level</td>
+                    <td>Fountain Gate Dodoma High School</td>
+                    <td>2023 - 2025</td>
+                </tr>
+
+                <tr>
+                    <td>O-Level</td>
+                    <td>Mwananchi Secondary School</td>
+                    <td>2019 - 2022</td>
+                </tr>
+
+                <tr>
+                    <td>Primary</td>
+                    <td>Kilimahewa Primary School</td>
+                    <td>2012 - 2018</td>
+                </tr>
+
+            </table>
+
+
+            <h4>Hobbies / Interests</h4>
+
+            <ul>
+
+                <li>
+
+                    <b>Scrolling</b>
+
+                    <p class="hobby-text">
+                        It gives me quick and easy rewards and takes my mind away from stress,
+    pressure, and overthinking during busy days at school. When I have spent
+    many hours studying, solving assignments, or working on projects, scrolling
+    through social media or interesting content helps me relax for a short time.
+    I enjoy discovering new ideas, learning about technology trends, reading
+    people's experiences, and keeping up with current events around the world.
+    Although I know that too much scrolling can become distracting, I try to use
+    it in moderation as a way to refresh my mind before returning to more
+    productive activities.
+                    </p>
+
+                    <button class="read-more-btn">
+                        Read More
+                    </button>
+
+                </li>
+
+                <li>
+
+                    <b>Seeing Things Neat</b>
+
+                    <p class="hobby-text">
+                        I feel like I am allergic to dust and poor arrangement. Because of this,
+    I always make sure my environment remains clean, organized, and comfortable.
+    I enjoy arranging books, files, and personal belongings in a way that makes
+    them easy to find whenever I need them. A neat environment helps me
+    concentrate better, reduces distractions, and makes studying more enjoyable.
+    I believe that maintaining cleanliness is not only good for appearance but
+    also contributes to productivity, discipline, and peace of mind.
+                    </p>
+
+                    <button class="read-more-btn">
+                        Read More
+                    </button>
+
+                </li>
+
+                <li>
+
+                    <b>Watching Movies</b>
+
+                    <p class="hobby-text">
+                        Although I am not among the biggest movie fans, watching Hollywood movies
+    makes me feel that almost anything is possible, even when the stories are
+    fictional. I enjoy movies that involve technology, action, adventure, and
+    problem-solving because they often introduce creative ideas and different
+    ways of thinking. Sometimes movies inspire me to learn new skills or explore
+    topics that I had never considered before. Watching a good movie is also a
+    great way to relax after a long day of studying and academic work.
+                    </p>
+
+                    <button class="read-more-btn">
+                        Read More
+                    </button>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <h3>Gallery</h3>
+
+    <div class="gallery">
+
+        <img src="Blockchain.png" class="gallery-img">
+
+        <img src="Hollywood.png" class="gallery-img">
+
+        <img src="Kali.png" alt="Kali Linux" class="gallery-img">
+
+    </div>
+
+    <div id="lightbox">
+  <span id="closeLightbox">&times;</span>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+
+  <!-- Scroll To Top Button -->
+
+    <button id="topBtn">
+        ↑
+    </button>
+
+
+    <div class="icons">
+        <div class="Linkdlen">
+        <a href="https://www.linkedin.com/in/bagomwa-raphael-2a922439a" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        </a>
+        </div>
+
+        <div class="Instagram">
+        <a href="https://www.instagram.com/m.a.d.e.d.e" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        </a>
+        </div>
+
+        <div class="Github">
+        <a href="https://github.com/realmadede" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+        </a>
+        </div>
+
+    </div>
+
+    <script src="Madede.js"></script>
+
+</body>
+
 </html>

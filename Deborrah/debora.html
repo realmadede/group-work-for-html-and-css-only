@@ -1,127 +1,214 @@
-<!DOCTYPE html>
-<html lang="eng">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" width="width=device-width, initial-scale=1.0">
-        <title>Debora</title>
-        <link rel="stylesheet" href="debora.css">
-    </head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debora</title>
+    <link rel="stylesheet" href="debora.css" />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/128/6889/6889369.png"
+    />
+  </head>
 
-    <body>
+  <body>
     <div class="container">
-        <header class="header">
-            <h2 class="name">Debora's portfolio</h2>
-            <nav class="navbar">
-                <a href="../index.html">Home</a>
-                <a href="../Contact/contact.html">Contact Us</a>
-            </nav>
-        </header>
+      <header class="header">
+        <div class="header-left">
+          <h2 class="name">Debora's Portfolio</h2>
+          <p class="tagline">Student, coder, and creative thinker.</p>
         </div>
-        <div class="contents">
-          <div class="image">
-            <img src="deboraimg.jpeg" alt="profile photo" width="150px">
+        <div class="header-right">
+          <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../Contact/contact.html">Contact</a>
+          </nav>
+          <button id="themeBtn" class="theme-toggle" type="button">
+            Dark Mode
+          </button>
+        </div>
+      </header>
+
+      <main class="contents">
+        <section class="profile-card">
+          <div class="photo-frame">
+            <img
+              src="deboraimg.jpeg"
+              alt="Debora profile photo"
+              class="lightbox-img"
+            />
           </div>
-           <div class="scrollable">
-             <div class="active">
-            <h4>Debora's Bio</h4>
-            <h3>Computer Science Student</h3>
-                    <p> My name is Debora Eric. I was born and currently live in
-                        Arusha but reside in Dar es salaam for educational
-                        reasons.</p>
-                    <p>I am a computer science student currently studying and
-                        developing skills in programming</p>
-                    <p>My goal in life is to live for impact, to live
-                        intentionally and not just existing.</p>
-        </div>
+          <div class="bio-box">
+            <h4>Debora Eric</h4>
+            <p>
+              Computer Science student moving between Arusha and Dar es Salaam.
+            </p>
+            <p>
+              I am learning programming and web design while building skills for
+              my future career.
+            </p>
+            <p>
+              I want to live intentionally and use technology to make a positive
+              impact.
+            </p>
+          </div>
+        </section>
 
-                    
+        <section class="panel">
+          <div class="panel-header">
+            <h3>My Skills</h3>
+          </div>
+          <ul class="skills-list">
+            <li class="skill-item" tabindex="0">
+              Programming
+              <p class="skill-detail">
+                I solve problems with code and build apps using clear logic.
+              </p>
+            </li>
+            <li class="skill-item" tabindex="0">
+              Communication
+              <p class="skill-detail">
+                I share ideas clearly and work well with others in a team.
+              </p>
+            </li>
+            <li class="skill-item" tabindex="0">
+              Baking
+              <p class="skill-detail">
+                I create desserts with care and enjoy practicing new recipes.
+              </p>
+            </li>
+            <li class="skill-item" tabindex="0">
+              Organization
+              <p class="skill-detail">
+                I plan tasks and keep my work clean so I stay focused.
+              </p>
+            </li>
+          </ul>
+        </section>
 
-        
-
-        <h3>My Skills</h3>
-
-        <ul>
-            <li>Programming</li>
-            <li>Communication</li>
-            <li>Cooking</li>
-            <li>Organization</li>
-            <ul>
-                <li>Planning and scheduling</li>
-                <li>Physical organization</li>
-                <li>Task priotization</li>
-            </ul>
-        </ul>
-
-        
-
-        <h4>Education</h4>
-
-        <table>
-            <tr>
+        <section class="panel">
+          <div class="panel-header education-header">
+            <h3>Education</h3>
+            <button id="sortBtn" class="sort-btn" type="button">
+              Sort Year ↓
+            </button>
+          </div>
+          <div class="table-wrap">
+            <table id="eduTable">
+              <tr>
                 <th>Level</th>
                 <th>School</th>
                 <th>Year</th>
-            </tr>
-            <tr>
+              </tr>
+              <tr>
                 <td>University</td>
-                <td>University of Dar es salaam</td>
+                <td>University of Dar es Salaam</td>
                 <td>2025-date</td>
-            </tr>
-            <tr>
+              </tr>
+              <tr>
                 <td>A-Level</td>
-                <td>Makambako High school</td>
+                <td>Makambako High School</td>
                 <td>2023-2025</td>
-            </tr>
-            <tr>
+              </tr>
+              <tr>
                 <td>O-Level</td>
-                <td>Precious Blood Girls'secondary School</td>
+                <td>Precious Blood Girls Secondary School</td>
                 <td>2019-2022</td>
-            </tr>
-            <tr>
+              </tr>
+              <tr>
                 <td>Primary</td>
                 <td>Amani Primary School</td>
                 <td>2012-2018</td>
-            </tr>
-        </table>
+              </tr>
+            </table>
+          </div>
+        </section>
 
-        
-
-        <h3>Hobbies/Interest</h3>
-
-        <ul type="bullet">
-            <li><b>Singing</b><br>
-                I love singing praise and worship songs to my maker
+        <section class="panel hobby-panel">
+          <h3>Hobbies & Interest</h3>
+          <ul class="hobby-list">
+            <li class="hobby-item">
+              <strong>Singing</strong>
+              <p class="hobby-text collapsed">
+                I love singing praise and worship songs to my maker.Singing makes me
+                happy and so much joyful that's why it's my favorite thing to do.It's 
+                actually amazing and most of the songs I enjoy singing are from my favorite 
+                artists like Naomi Raine.One of my favorite song is "The story I'll tell" which 
+                talks about the grace of God and his mighty deeds in our lives.
+              </p>
+              <button class="read-more-btn">Read more</button>
+              
             </li>
-
-            <br>
-
-            <li><b>Baking</b><br>
-                My love for sweets makes me be creative in the kitchen with
-                pastry
+            <li class="hobby-item">
+              <strong>Baking</strong>
+              <p class="hobby-text collapsed">
+                My love for sweets moves me to create pastries and tasty treats.I also learn 
+                new baking techniques from television programs and social media and try them out.For instance,
+                through watching YouTube videos I learnt how to bake lemon butter cookies which are extremely
+                tasty.Back then,my favorite show was "Bake with Anna Olson"in food network and after watching I 
+                would immediately go to the kitchen and try out the recipe even though I failed,I would try again. 
+              </p>
+              <button class="read-more-btn">Read more</button>
             </li>
-        </ul>
+          </ul>
+        </section>
+      </main>
 
-        </div>
-        </div>
-
+      <section class="gallery-section">
         <h3>Gallery</h3>
-          <div class="gallery">
-        <img src="picture1.webp" width="200" height="200">
-        <img src="picture2.webp" width="200" height="200">
-         </div>
-        
-        <footer class="icons">
-        
-        <a href="https://www.youtube.com/watch?v=ouvOYElia1A&list=PLBlnK6fEyqRiueC_HzwFallNO76hfXBB7&index=7"
-                    target="_blank">
-                    <img
-                        src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
-                        width="30" height="30"></a>
-            <a href="https://github.com/deborayunusu" target="_blank"><img
-                        src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
-                        width="30" height="30"></a>
-            </footer>
-        
-          
-        </body>
-    </html>
+        <div class="gallery">
+          <img
+            src="picture1.webp"
+            alt="Gallery photo 1"
+            class="gallery-img lightbox-img"
+          />
+          <img
+            src="picture2.webp"
+            alt="Gallery photo 2"
+            class="gallery-img lightbox-img"
+          />
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="social-icons">
+          <a
+            href="https://www.youtube.com/watch?v=ouvOYElia1A&list=PLBlnK6fEyqRiueC_HzwFallNO76hfXBB7&index=7"
+            target="_blank"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+              alt="YouTube"
+              width="30"
+              height="30"
+            />
+          </a>
+          <a href="https://github.com/deborayunusu" target="_blank">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+              alt="GitHub"
+              width="30"
+              height="30"
+            />
+          </a>
+        </div>
+      </footer>
+
+      <button
+        id="topBtn"
+        class="top-btn"
+        type="button"
+        aria-label="Scroll to top"
+      >
+        ↑
+      </button>
+
+      <div id="lightbox" class="lightbox">
+        <span id="closeBtn" class="close-btn">&times;</span>
+        <img id="lightboxImg" alt="Preview image" />
+      </div>
+
+      <script src="debora.js"></script>
+    </div>
+  </body>
+</html>

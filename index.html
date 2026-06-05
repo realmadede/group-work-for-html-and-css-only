@@ -15,12 +15,22 @@
         <nav class="top-right">
             <a href="index.html" class="active">Home</a>
             <a href="Contact/contact.html">Contact Us</a>
+            <div class="nav-divider"></div>
+            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">
+                <span class="toggle-icon"></span>
+                <span class="toggle-label"></span>
+            </button>
         </nav>
     </header>
 
+    <div id="clock">
+        <h2 id="clockv">00:00:00</h2>
+    </div>
+
     <main class="main-container">
         <div class="card top">
-            <h3>Welcome to Our Portfolio Website</h3>
+            <span id="typewriter-text"></span><span class="cursor">|</span>
+            <p id="welctxt" style="display:none">Welcome to Our Portfolio Website</p>
             <p>This website showcases the profiles and projects of students.</p>
         </div>
 
@@ -31,7 +41,7 @@
 
         <div class="card group-photo">
             <h3>Group Photo</h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_ANKBI1bislJmL6XE2uJK0te0U4EIE15STQ&s" alt="Group Photo" height="500px" width="100%">
+            <img src="discussion.png" alt="Group Photo" style="height:500px;width:100%;object-fit:cover;border-radius:8px;margin-top:8px;">
         </div>
 
         <div class="card bot">
@@ -44,7 +54,7 @@
             <div class="members-grid">
                 <a href="Deborrah/debora.html">Deborah</a>
                 <a href="Dorcus/dorcus.html">Dorcus</a>
-                <a href="Gianna/Gianna.html">Giannafrida</a>
+                <a href="Gianna/Gianna.html">Gianna</a>
                 <a href="Jesca/Jesca.html">Jesca</a>
                 <a href="Madede/Madede.html">Madede</a>
                 <a href="Mwita/mwita.html">Mwita</a>
@@ -53,5 +63,6 @@
             </div>
         </div>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -191,3 +191,324 @@ footer {
 .icons a:hover img {
     transform: scale(1.5);
 }
+/*light mode*/
+body.light-mode {
+    background: #b6b8b7;
+    color: #1a1a2e
+}
+
+body.light-mode .header {
+    background: #78a5b3;
+}
+
+body.light-mode .scrollable table th,
+body.light-mode .scrollable table td {
+    border-color: #1a1a2e;
+}
+
+body.light-mode .scrollable h4,
+body.light-mode .scrollable .active h3,
+body.light-mode .contents + h3,
+body.light-mode body > h3 {
+    color: #78a5b3
+}
+
+body.light-mode .skill-detail {
+    background: #dce8f5;
+    color: #1a1a2e;
+    border-left-color: #78a5b3;
+}
+
+body.light-mode .sort-btn,
+body.light-mode .read-more-btn,
+body.light-mode #theme-toggle,
+body.light-mode #scroll-top-btn {
+    background: #78a5b3;
+    color: #fff;
+}
+
+/* SORT BUTTON */
+.sort-btn {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 7px 18px;
+    background: #18353b;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 500;
+    transition: background 0.25s, transform 0.2s;
+}
+
+.sort-btn.light-mode {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 7px 18px;
+    background: #00abf0;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 500;
+    transition: background 0.25s, transform 0.2s;
+}
+
+.sort-btn:hover {
+    background: #18353b;
+    transform: scale(1.04);
+}
+
+.sort-btn.light-mode:hover {
+    background: #0090cc;
+    transform: scale(1.04);
+}
+
+/* SKILLS — clickable items */
+.skill-item {
+    cursor: pointer;
+    list-style: disc;
+    transition: color 0.2s;
+    user-select: none;
+}
+
+.skill-item:hover,
+.skill-item.skill-open {
+    color: #00abf0;
+}
+
+.skill-item::after {
+    content: " ▸";
+    font-size: 11px;
+    opacity: 0.9;
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+.skill-item.skill-open::after {
+    transform: rotate(90deg);
+}
+
+/* Hidden / visible detail paragraph */
+.skill-detail {
+    margin-top: 6px;
+    padding: 8px 12px;
+    background: transparent;
+    border-left: 3px solid #00abf0;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.55;
+    transition: opacity 0.3s, max-height 0.35s;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.skill-detail.hidden {
+    display: none;
+}
+
+/* HOBBIES — Read More / Read Less  */
+.hobby-text {
+    display: block;
+    margin-top: 4px;
+}
+
+.hobby-text.clamped {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.read-more-btn {
+    margin-top: 6px;
+    background: none;
+    border: none;
+    color: #00abf0;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: inherit;
+    font-weight: 600;
+    padding: 0;
+    transition: opacity 0.2s;
+}
+
+.read-more-btn:hover {
+    opacity: 0.75;
+    text-decoration: underline;
+}
+
+/* DARK / LIGHT TOGGLE BUTTON */
+#theme-toggle {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #ededed;
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.2s;
+    white-space: nowrap;
+}
+
+#theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.28);
+    transform: scale(1.05);
+}
+/* SCROLL-TO-TOP BUTTON */
+#scroll-top-btn {
+    position: fixed;
+    bottom: 32px;
+    right: 28px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #18353b;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+
+    /* Hidden by default — JS adds .visible */
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(12px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+#scroll-top-btn.light-mode {
+    position: fixed;
+    bottom: 32px;
+    right: 28px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #00abf0;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+
+    /* Hidden by default — added by JS .visible */
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(12px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+#scroll-top-btn.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+#scroll-top-btn:hover {
+    background: #18353b;
+    transform: scale(1.09);
+}
+
+#scroll-top-btn.light-mode:hover {
+    background: #0090cc;
+    transform: scale(1.09);
+}
+/* GALLERY/GENERAL image hover cue */
+.contents + h3,
+body > h3 {
+    text-align: center;
+    margin: 30px 5% 16px;
+    font-size: 24px;
+    color: #00abf0;
+}
+
+body > img {
+    max-width: 100%;
+    height: auto;
+    margin: 8px;
+    border-radius: 6px;
+    vertical-align: middle;
+}
+
+.gallery {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.gallery img {
+    border-radius: 6px;
+}
+
+/* Pointer cursor on lightbox-enabled images */
+img.lightbox-trigger {
+    cursor: zoom-in;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+img.lightbox-trigger:hover {
+    opacity: 0.85;
+    transform: scale(1.03);
+}
+
+/* LIGHTBOX OVERLAY */
+#lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.88);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox.active {
+    display: flex;
+}
+
+#lightbox-img {
+    max-width: 90vw;
+    max-height: 85vh;
+    border-radius: 8px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+    object-fit: contain;
+}
+
+#lightbox-close {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.4);
+    color: #fff;
+    font-size: 22px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, transform 0.2s;
+}
+
+#lightbox-close:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}

@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Character encoding for proper text display -->
         <meta charset="UTF-8">
-
-        <!-- Makes the page responsive on all devices -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Title shown on browser tab -->
         <title>Tristian's Profile</title>
-           <link rel="icon"  href="favicon.jpeg">
-
+        <link rel="icon" href="favicon.jpeg">
         <link rel="stylesheet" href="Tristian.css">
     </head>
 
     <body>
         <div class="container">
-        <header class="header">
-            <h2 class="name">TRISTIAN'S</h2>
-
-            <nav class="navbar">
-                <a href="../index.html">Home</a>
-                <a href="../Contact/contact.html">Contact Us</a> 
-            </nav>
-        </header>
+            <header class="header">
+                <h2 class="name">TRISTIAN'S</h2>
+                <nav class="navbar">
+                    <a href="../index.html">Home</a>
+                    <a href="../Contact/contact.html">Contact Us</a> 
+                </nav>
+                <button id="themeBtn">🌙 Dark Mode</button>
+            </header>
         </div>
         
         <div class="contents">
@@ -41,126 +35,83 @@
                 </div>
 
                 <h4>Skills</h4>
-
                 <ul>
-                    <li>Effective Communication</li>
-                    <li>Professional Networking</li>
-                    <li>Leadership</li>
-
-                    <!-- Nested list for programming skills -->
-                    <li>Programming
-                        <ul>
-                            <li>C Programming</li>
-                            <li>Java</li>
-                            <li>HTML</li>
-                            <li>Python</li>
-                        </ul>
+                    <li class="skill-item">
+                        Effective Communication
+                        <p class="skill-details hidden">
+                            Able to communicate ideas clearly in teams and presentations.
+                        </p>
+                    </li>
+                    <li class="skill-item">
+                        Professional Networking
+                        <p class="skill-details hidden">
+                            Building professional relationships and collaborations.
+                        </p>
+                    </li>
+                    <li class="skill-item">
+                        Leadership
+                        <p class="skill-details hidden">
+                            Experience leading teams and organizing activities.
+                        </p>
                     </li>
                 </ul>
 
-        <!-- Education Section -->
-        <h4>Education</h4>  
+                <h4>Education</h4>  
+                <button id="sortBtn">Sort by Year</button>
+                <table id="educationTable">
+                    <thead>
+                        <tr><th>Level</th><th>School</th><th>Year</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>University</td><td>University of Dar es Salaam</td><td>2025 - On going</td></tr>
+                        <tr><td>A-level</td><td>Kalangalala Secondary School</td><td>2023 - 2025</td></tr>
+                        <tr><td>O-Level</td><td>Igelegele Secondary School</td><td>2019 - 2022</td></tr>
+                        <tr><td>Primary</td><td>Igelegele Primary School</td><td>2012 - 2018</td></tr>
+                    </tbody>
+                </table>
 
-        <!-- Table for education details -->
-        <table>
-            <tr>
-                <th>Level</th>
-                <th>School</th>
-                <th>Year</th>
-            </tr>
-
-            <!-- University -->
-            <tr>
-                <td>University</td>
-                <td>University of Dar es Salaam</td>
-                <td>2025 - On going</td>
-            </tr>
-
-            <!-- A-Level -->
-            <tr>
-                <td>A-level</td>
-                <td>Kalangalala Secondary School</td>
-                <td>2023 - 2025</td>
-            </tr>
-
-            <!-- O-Level -->
-            <tr>
-                <td>O-Level</td>
-                <td>Igelegele Secondary School</td>
-                <td>2019 - 2022</td>
-            </tr>
-
-            <!-- Primary -->
-            <tr>
-                <td>Primary</td>
-                <td>Igelegele Primary School</td>
-                <td>2012 - 2018</td>
-            </tr>
-        </table>
-
-
-        <h4>Hobbies / Interests</h4>
-
-        <ul>
-            <li>
-                <b>Listening Music</b><br>
-                <!-- Description of hobby -->
-                <p>I love listening to music because it helps me refresh my brain and keeps me focused because of its good rhythm. That's why I like listening to music even at study time.</p>
-            </li>
-
-            <li>
-                <b>Coding</b><br>
-                <!-- Description of hobby -->
-                <p>Coding is a creative hobby that lets me build solutions, websites, and applications while sharpening my problem-solving skills.</p>
-            </li>
-
-            <li>
-                <b>Cleaning</b><br>
-                <!-- Description of hobby -->
-                <p>I like cleaning because it keeps my environment neat and organized. It gives me a sense of order and satisfaction.</p>
-            </li>
-
-            <li>
-                <b>Socializing</b><br>
-                <!-- Description of hobby -->
-                <p>The act of interacting with others, fostering connections, and engaging in social activities serves to improve mental and emotional health.</p>
-            </li>
-        </ul>
-
+                <h4>Hobbies / Interests</h4>
+                <ul>
+                    <li>
+                        <b>Listening Music</b><br>
+                        <p class="hobby-desc">I love listening to music because it helps me refresh my brain and keeps me focused because of its good rhythm. That's why I like listening to music even at study time.</p>
+                    </li>
+                    <li>
+                        <b>Coding</b><br>
+                        <p class="hobby-desc">Coding is a creative hobby that lets me build solutions, websites, and applications while sharpening my problem-solving skills.</p>
+                    </li>
+                    <li>
+                        <b>Cleaning</b><br>
+                        <p class="hobby-desc">I like cleaning because it keeps my environment neat and organized. It gives me a sense of order and satisfaction.</p>
+                    </li>
+                    <li>
+                        <b>Socializing</b><br>
+                        <p class="hobby-desc">The act of interacting with others, fostering connections, and engaging in social activities serves to improve mental and emotional health.</p>
+                    </li>
+                </ul>
             </div>
-    </div>      
+        </div>      
         
         <h3>Gallery</h3>
-    <div class="gallery">
-        <!-- Sample images -->
-        <img src="music.png" height="150" width="200" alt="music listening">
-        <img src="coding.png" height="150" width="200" alt="coding">
-        <img src="cleaning.png" height="150" width="200" alt="cleaning">
-        <img src="socializing.png" height="150" width="200" alt="socializing">
-    </div>
-        
-
+        <div class="gallery">
+            <img src="music.png" height="150" width="200" alt="music listening">
+            <img src="coding.png" height="150" width="200" alt="coding">
+            <img src="cleaning.png" height="150" width="200" alt="cleaning">
+            <img src="socializing.png" height="150" width="200" alt="socializing">
+        </div>
 
         <footer class="icons">
-                <a href="https://www.linkedin.com/in/geofrey-pembwa-ab026b395?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
-                    <img
-                        src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-                        height="30" width="30">
-                </a>
-
-                <a href="https://www.instagram.com/tristian_rey?igsh=aXludW1jemowbTBx" target="_blank">
-                    <img
-                        src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-                        height="30" width="30">
-                </a>
-              
-                <a href="https://github.com/geofreypembwa" target="_blank">
-                    <img
-                        src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
-                        height="30" width="30">
-                </a>
-        
+            <a href="https://www.linkedin.com/in/geofrey-pembwa-ab026b395?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" height="30" width="30">
+            </a>
+            <a href="https://www.instagram.com/tristian_rey?igsh=aXludW1jemowbTBx" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" height="30" width="30">
+            </a>
+            <a href="https://github.com/geofreypembwa" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" height="30" width="30">
+            </a>
         </footer>
     
+        <script src="Tristian.js" defer></script>
     </body>
 </html>

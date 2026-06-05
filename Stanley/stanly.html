@@ -1,169 +1,206 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Character encoding for proper text display -->
     <meta charset="UTF-8" />
-
-    <!-- Makes the page responsive on all devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Title shown on browser tab -->
-    <title>Stanley's Profile</title>
-    <link rel="stylesheet" href="stanly.css" />
+    <title>Stanley Portfolio</title>
     <link
       rel="icon"
-      href="https://cdn-icons-png.flaticon.com/128/18114/18114378.png"
+      href="https://cdn-icons-png.flaticon.com/128/7710/7710521.png"
     />
+    <link rel="stylesheet" href="stanly.css" />
   </head>
 
   <body>
-    <div class="container">
-      <header class="header">
-        <h2 class="name">Stanley Mbilinyi</h2>
+    <header class="header">
+      <h2>Stanley Mbilinyi</h2>
 
-        <nav class="navbar">
-          <a href="../index.html">
-            <img
-              src="https://cdn-icons-png.flaticon.com/128/263/263115.png"
-              height="20"
-              width="20"
-            />Home</a
-          >
-          <a href="../Contact/contact.html"
-            ><img
-              src="https://cdn-icons-png.flaticon.com/128/159/159832.png"
-              height="20"
-              width="20"
-            />Contact Us</a
-          >
-        </nav>
-      </header>
-    </div>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../Contact/contact.html">Contact</a>
+      </nav>
 
-    <div class="contents">
-      <div class="image">
-        <img
-          src="stanly.jpg"
-          alt="Profile photo"
-          width="150px"
-          height="150px"
-        />
+      <button id="themeBtn">⬛ Dark Mode</button>
+    </header>
+
+    <section class="hero">
+      <img src="stanly.jpg" alt="Stanley" class="lightbox-img" />
+
+      <div>
+        <h1>Computer Science Student</h1>
+
+        <p>
+          Passionate about software development, web technologies, networking
+          and problem solving.
+        </p>
       </div>
+    </section>
 
-      <div class="scrollable">
-        <div class="active">
-          <h3>Biography</h3>
-          <p font-size="30px">
-            I am a Computer Science student at University of Dar es Salaam with
-            a strong interest in coding and exploring different areas of
-            technology. I am passionate about learning new skills in computing
-            and continuously improving my ability to build practical and
-            innovative solutions.
-          </p>
-        </div>
+    <main class="container">
+      <section class="card">
+        <h2>Biography</h2>
 
-        <ul>
-          <li>Teamwork</li>
-          <li>Networking</li>
+        <p>
+          I am a Computer Science student at the University of Dar es Salaam
+          with a strong passion for technology and software development. I enjoy
+          learning new technologies and building practical solutions that solve
+          real-world problems.
+        </p>
+      </section>
 
-          <!-- Nested list for programming skills -->
-          <li>
-            Programming
-            <ul>
-              <li>C Programming</li>
-              <li>Java</li>
-              <li>HTML</li>
-              <li>Python</li>
-            </ul>
+      <section class="card">
+        <h2>Skills</h2>
+
+        <ul class="skills-list">
+          <li class="skill-item">
+            Teamwork
+            <p class="skill-detail">
+              Collaborating effectively with others to reach shared goals.
+            </p>
+          </li>
+          <li class="skill-item">
+            Networking
+            <p class="skill-detail">
+              Designing and maintaining network systems for strong connectivity.
+            </p>
+          </li>
+          <li class="skill-item">
+            C Programming
+            <p class="skill-detail">
+              Writing efficient C code for systems and low-level applications.
+            </p>
+          </li>
+          <li class="skill-item">
+            Java
+            <p class="skill-detail">
+              Developing Java applications with object-oriented design.
+            </p>
+          </li>
+          <li class="skill-item">
+            HTML & CSS
+            <p class="skill-detail">
+              Building responsive and accessible web page layouts.
+            </p>
+          </li>
+          <li class="skill-item">
+            JavaScript
+            <p class="skill-detail">
+              Creating interactive web experiences using JavaScript.
+            </p>
+          </li>
+          <li class="skill-item">
+            Python
+            <p class="skill-detail">
+              Automating tasks and analyzing data with Python scripts.
+            </p>
           </li>
         </ul>
-      
-        <!-- Education Section -->
-        <h4>Education</h4>
+      </section>
 
-        <!-- Table for education details -->
-        <table>
+      <section class="card">
+        <h2>Education</h2>
+
+        <button id="sortBtn">Sort By Year</button>
+
+        <table id="eduTable">
           <tr>
             <th>Level</th>
             <th>School</th>
             <th>Year</th>
           </tr>
 
-          <!-- University -->
           <tr>
             <td>University</td>
-            <td>University of Dar Es Salaam</td>
-            <td>2025 - To date</td>
+            <td>UDSM</td>
+            <td>2025</td>
           </tr>
 
-          <!-- A-Level -->
           <tr>
             <td>Diploma</td>
-            <td>Dar es Salaam institute of Technology</td>
-            <td>2022 - 2025</td>
+            <td>DIT</td>
+            <td>2022</td>
           </tr>
 
-          <!-- O-Level -->
           <tr>
             <td>O-Level</td>
-            <td>Golden secondary school</td>
-            <td>2018 - 2021</td>
+            <td>Golden Secondary School</td>
+            <td>2018</td>
           </tr>
 
-          <!-- Primary -->
           <tr>
             <td>Primary</td>
-            <td>Montessori Primary school</td>
-            <td>2012 - 2017</td>
+            <td>Montessori Primary School</td>
+            <td>2012</td>
           </tr>
         </table>
-    
+      </section>
 
-        <h4>Hobbies / Interests</h4>
+      <section class="card">
+        <h2>Hobbies</h2>
 
-        <ul>
-          <li>
+        <ul class="hobbies-list">
+          <li class="hobby-item">
             <b>Swimming</b><br />
-            <!-- Description of hobby -->
-            <p>
-              I love swimming because it keeps my body fit while improving
-              endurance and breathing control. <br />
-              It’s also relaxing and a valuable life skill that helps reduce
-              stress and build confidence in water.
+            <p class="hobby-description">
+              I enjoy swimming because it is one of the best ways to stay
+              physically active and healthy. It helps improve my endurance,
+              breathing control, and overall fitness while being gentle on the
+              body. Swimming also gives me a sense of relaxation and helps
+              reduce stress after a busy day. I enjoy learning new swimming
+              techniques and challenging myself to improve my performance in the
+              water. Besides being a fun recreational activity, swimming is an
+              important life skill that promotes confidence and personal safety.
             </p>
+            <button class="read-more-btn" type="button">Read More</button>
           </li>
 
-          <li>
+          <li class="hobby-item">
             <b>Coding</b>
-            <!-- Description of hobby -->
-            <p>
-              Coding is a creative hobby that lets me build solutions, websites,
-              and applications while sharpening my problem-solving skills.
+            <p class="hobby-description">
+              Coding is one of my favorite hobbies because it allows me to
+              create useful applications and solve real-world problems. I enjoy
+              learning new programming languages, frameworks, and technologies
+              that expand my knowledge in software development. Coding
+              challenges my logical thinking and improves my problem-solving
+              abilities through practice and experimentation. It also gives me
+              the opportunity to turn creative ideas into working digital
+              solutions such as websites and programs. Through coding, I
+              continue to develop skills that will support my future career in
+              technology.
             </p>
+            <button class="read-more-btn" type="button">Read More</button>
           </li>
 
-          <li>
+          <li class="hobby-item">
             <b>Football</b><br />
-            <!-- Description of hobby -->
-            <p>
-              I like playing football because it’s a fun way to stay active,
-              improve teamwork, and enjoy friendly competition with friends.
+            <p class="hobby-description">
+              Football is a sport that I enjoy because it keeps me physically
+              active and improves my overall fitness. Playing football helps me
+              develop teamwork, communication, and leadership skills while
+              working with other players. I enjoy the excitement of matches and
+              the friendly competition that comes with the game. Football also
+              teaches discipline, determination, and the importance of
+              consistent practice to achieve improvement. Beyond the sport
+              itself, it provides an opportunity to socialize, make friends, and
+              have fun.
             </p>
+            <button class="read-more-btn" type="button">Read More</button>
           </li>
         </ul>
-        
+      </section>
+    </main>
+
+    <section class="gallery-section">
+      <h2>Gallery</h2>
+
+      <div class="gallery">
+        <img src="swimming.webp" class="gallery-img lightbox-img" />
+        <img src="code.jpg" class="gallery-img lightbox-img" />
+        <img src="football.webp" class="gallery-img lightbox-img" />
       </div>
-    </div>
+    </section>
 
-    <h3>Gallery</h3>
-    <div class="gallery">
-      <!-- Sample images -->
-      <img src="swimming.webp" height="150" width="200" />
-      <img src="code.jpg" height="150" width="200" />
-      <img src="football.webp" height="150" width="200" />
-    </div>
-
-    <footer class="icons">
+    <footer>
       <a href="https://www.instagram.com/halycyrex/" target="_blank">
         <img
           src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
@@ -199,5 +236,15 @@
         />
       </a>
     </footer>
+
+    <div id="lightbox">
+      <span id="closeBtn">&times;</span>
+
+      <img id="lightboxImg" />
+    </div>
+
+    <button id="topBtn">↑</button>
+
+    <script src="stanly.js"></script>
   </body>
 </html>

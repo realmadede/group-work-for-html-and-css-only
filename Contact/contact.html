@@ -6,119 +6,140 @@
     <title>Contact</title>
     <link rel="stylesheet" href="contact.css">
 </head>
-
 <body>
-    <div class="main-container">
-        <header class="navbar">
-            <div class="header">
-                <div class="req">
-                <h1>Connect With Us</h1>
-                <p>Have any question or want to get in touch? Fill out the form below</p>
-                </div>
-                <div class="nar">
-                <a href="../index.html">Home</a>
-                <button onclick="history.back()" class="but">Back</button>
-                </div>
-            </div>
-        </header>
+    <header class="header">
+        <div class="req">
+            <h1>Connect With Us</h1>
+            <p>Have a question? Fill out the form below</p>
+        </div>
+        <div class="nar">
+            <a href="../index.html">Home</a>
+            <button class="but" onclick="history.back()">Back</button>
+            <div class="nav-divider"></div>
+            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">
+                <span class="toggle-icon"></span>
+                <span class="toggle-label">Dark</span>
+            </button>
+        </div>
+    </header>
 
+    <div class="main-container">
         <div class="content">
-    <h3> Contact information</h3>
-        <div clss="contact">
-    <b>Email: </b> <a href="mailto:mwitasebastian@icloud.com" target="_blank">groupgm@.com</a><br>
-    <b>Phone: </b>+255 7XX XXX XXX <br>
-    <b>Address: </b><a href="https://share.google/VHwOsMKqf42D4q6IT" target="_blank">University of Dar es Salaam, Tanzania</a>
+
+            <div class="contact-info-card">
+                <h3>Contact Information</h3>
+                <b>Email: </b><a href="mailto:info@groupgm.com" target="_blank">info@groupgm.com</a><br>
+                <b>Phone: </b> +255 7XX XXX XXX<br>
+                <b>Address: </b><a href="https://share.google/VHwOsMKqf42D4q6IT" target="_blank">University of Dar es Salaam, Tanzania</a>
+            </div>
+
+            <div class="cent">
+                <h3>Contact Form</h3>
+
+                <form id="form" novalidate>
+
+                    <!-- Full Name -->
+                    <div class="middle">
+                        <label><b>Full Name</b></label>
+                        <input id="username" type="text" placeholder="Enter your full name">
+                        <div class="error"></div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="middle">
+                        <label><b>Email Address</b></label>
+                        <input id="email" type="email" placeholder="Enter your email address">
+                        <div class="error"></div>
+                    </div>
+
+                    <!-- Gender -->
+                    <div id="gender-group" class="group-field">
+                        <label class="group-label"><b>Gender</b></label>
+                        <span class="inputt">
+                            <label class="radio-label"><input type="radio" name="gender" value="male"> Male</label>
+                            <label class="radio-label"><input type="radio" name="gender" value="female"> Female</label>
+                        </span>
+                        <div class="group-hint">Please select your gender</div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="mes middle">
+                        <label><b>Message</b></label>
+                        <textarea name="message" id="messag" placeholder="Write your message here" required></textarea>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="form-grid">
+
+                        <!-- Inquiry Type -->
+                        <div id="inquiry-group" class="group-field inquiry-section">
+                            <h3 class="inquiry-title">Inquiry Type</h3>
+                            <div class="inquiry-options">
+                                <label class="inquiry-label">
+                                    <input type="radio" name="inquiry" value="general" class="inquiry-radio">
+                                    <span>General inquiry</span>
+                                </label>
+                                <label class="inquiry-label">
+                                    <input type="radio" name="inquiry" value="collaboration" class="inquiry-radio">
+                                    <span>Collaboration</span>
+                                </label>
+                                <label class="inquiry-label">
+                                    <input type="radio" name="inquiry" value="feedback" class="inquiry-radio">
+                                    <span>Feedback</span>
+                                </label>
+                                <label class="inquiry-label">
+                                    <input type="radio" name="inquiry" value="sponsorship" class="inquiry-radio">
+                                    <span>Sponsorship</span>
+                                </label>
+                                <label class="inquiry-label">
+                                    <input type="radio" name="inquiry" value="other" class="inquiry-radio">
+                                    <span>Other</span>
+                                </label>
+                            </div>
+                            <div class="group-hint">Please select an inquiry type</div>
+                        </div>
+
+                        <!-- Interests -->
+                        <div id="interest-group" class="group-field interests-section">
+                            <h3 class="interests-title">Interests</h3>
+                            <div class="interests-options">
+                                <label class="interests-label">
+                                    <input type="checkbox" name="interests" value="web-dev" class="interests-checkbox">
+                                    <span>Web development</span>
+                                </label>
+                                <label class="interests-label">
+                                    <input type="checkbox" name="interests" value="graphics" class="interests-checkbox">
+                                    <span>Graphics design</span>
+                                </label>
+                                <label class="interests-label">
+                                    <input type="checkbox" name="interests" value="mobile-dev" class="interests-checkbox">
+                                    <span>Mobile development</span>
+                                </label>
+                                <label class="interests-label">
+                                    <input type="checkbox" name="interests" value="ai" class="interests-checkbox">
+                                    <span>Artificial intelligence</span>
+                                </label>
+                                <label class="interests-label">
+                                    <input type="checkbox" name="interests" value="other" class="interests-checkbox">
+                                    <span>Other</span>
+                                </label>
+                            </div>
+                            <div class="group-hint">Please select at least one interest</div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="in">
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
     </div>
 
-    
-
-        <div class="cent">
-
-        <h3>Contact Form</h3>
-
-        <div class="middle">
-                    <label><b>Full Name: </b></label>
-                    <input type="text" placeholder="Enter your full name"><br>
-
-                    <label><b>Email Address: </b></label>
-                    <input type="email" placeholder="Enter your email address"><br>
-                    <label><b>Gender: </b></label>
-                    <input type="radio" name="gender"> Male
-                    <input type="radio" name="gender"> Female
-        </div>
-               
-                    <div class="mes">
-                    <label><b>Message: </b></label><br>
-                    <textarea name="message" placeholder="Write your message here"></textarea>
-                    </div>
-                
-                
-
-             <div class="form-grid">
-      
-      
-      <div class="inquiry-section">
-        <h3 class="inquiry-title">Inquiry type</h3>
-        <div class="inquiry-options">
-          <label class="inquiry-label">
-            <input type="radio" name="inquiry" value="general" class="inquiry-radio">
-            <span>General inquiry</span>
-          </label>
-          <label class="inquiry-label">
-            <input type="radio" name="inquiry" value="collaboration" class="inquiry-radio">
-            <span>Collaboration</span>
-          </label>
-          <label class="inquiry-label">
-            <input type="radio" name="inquiry" value="feedback" class="inquiry-radio">
-            <span>Feedback</span>
-          </label>
-          <label class="inquiry-label">
-            <input type="radio" name="inquiry" value="sponsorship" class="inquiry-radio">
-            <span>Sponsorship</span>
-          </label>
-          <label class="inquiry-label">
-            <input type="radio" name="inquiry" value="other" class="inquiry-radio">
-            <span>Other</span>
-          </label>
-        </div>
-      </div>
-
-
-      <div class="interests-section">
-        <h3 class="interests-title">Interests</h3>
-        <div class="interests-options">
-          <label class="interests-label">
-            <input type="checkbox" name="interests" value="web-dev" class="interests-checkbox">
-            <span>Web development</span>
-          </label>
-          <label class="interests-label">
-            <input type="checkbox" name="interests" value="graphics" class="interests-checkbox">
-            <span>Graphics design</span>
-          </label>
-          <label class="interests-label">
-            <input type="checkbox" name="interests" value="mobile-dev" class="interests-checkbox">
-            <span>Mobile development</span>
-          </label>
-          <label class="interests-label">
-            <input type="checkbox" name="interests" value="ai" class="interests-checkbox">
-            <span>Artificial intelligence</span>
-          </label>
-          <label class="interests-label">
-            <input type="checkbox" name="interests" value="other" class="interests-checkbox">
-            <span>Other</span>
-          </label>
-        </div>
-      </div>
-
-        <div class="in">
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-        </div>
-
-        </div>
-        </div>
-
-
+    <script src="contact.js"></script>
 </body>
-
 </html>

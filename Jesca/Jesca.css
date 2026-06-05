@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background: #9d8189;
-    color: black;
-    min-height: 100vh;             
-    line-height: 1.5;
-    padding-top: 90px; 
+body { background-color: #1b263b;
+    color: #f8f9fa;
+    margin-top: 80px;
+
 }
 
 .header {
@@ -20,7 +17,7 @@ body {
     left: 0;
     width: 100%;
     padding: 15px 5%;
-    background: #d8e2dc;
+    background:  #f4a261;
     display: flex;
     flex-wrap: wrap;              
     justify-content: space-between;

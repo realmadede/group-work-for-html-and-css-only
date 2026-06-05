@@ -146,20 +146,19 @@ body > h3 {
     color: #00abf0;
 }
 
-body > img {
-    max-width: 100%;
-    height: auto;
-    margin: 8px;
-    border-radius: 6px;
-    vertical-align: middle;
-}
-
 .gallery {
     padding-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery img{
+    width: auto;
+    height: 200px;
+    max-width: 100%;
 }
 
 
@@ -167,22 +166,16 @@ body {
     text-align: left;
 }
 
-footer {
-    width: 100%;
-    padding: 30px 0;
-    text-align: center;
-}
-
 .icons {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 0 5%;
     gap: 20px;
 }
 
-.icons img {
+ img {
     padding-bottom: 5px;
     width: 30px;
     height: 30px;
@@ -193,3 +186,51 @@ footer {
     transform: scale(1.5);
 }
 
+
+.read-more-btn{
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    margin-top: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.read-more-btn:hover{
+    background-color: #005fa3;
+    transform: translateY(-2px);
+}
+
+.read-more-btn:active{
+    transform: translateY(0);
+}
+
+#themeBtn{ 
+    color: #222;
+    border: 2px solid white;
+    padding: 10px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+#sortBtn{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#sortBtn:hover{
+    background-color: #218838;
+}
